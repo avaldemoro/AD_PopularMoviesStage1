@@ -13,6 +13,11 @@ public class JsonUtils {
     final static String MOVIEDB_BASE_URL = "http://api.themoviedb.org/3/movie";
     final static String API_KEY = "<INSERT API KEY HERE>";
 
+    public static final String  TITLE = "title",
+            OVERVIEW = "overview",
+            RELEASE_DATE = "release_date",
+            RATING = "vote_average",
+            POSTER = "poster_path";
 
     public static URL buildUrl(String[] query) throws MalformedURLException {
         Uri builtUri = Uri.parse(MOVIEDB_BASE_URL).buildUpon()
