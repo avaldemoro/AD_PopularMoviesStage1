@@ -18,4 +18,4 @@ Your app will:
   * release date
   
 ## App Images
-![Screenshot](app.gif)
+<div style="text-align:center"> <img src="app.gif" width="400" height="600" /> </div>
