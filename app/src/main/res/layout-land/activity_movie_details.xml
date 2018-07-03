@@ -66,7 +66,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/releaseDateLabel"
         app:layout_constraintTop_toBottomOf="@+id/ratingTextView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="NotSibling" />
 
     <TextView
         android:id="@+id/ratingLabel"
@@ -84,11 +85,13 @@
         android:id="@+id/releaseDateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Released: "
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintStart_toEndOf="@+id/posterImageView"
         app:layout_constraintTop_toBottomOf="@+id/ratingLabel" />
 
@@ -113,6 +116,7 @@
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
             android:text="Overview"
+            android:layout_below="@id/scrollView2"
             android:textSize="16sp"
             tools:layout_editor_absoluteX="209dp"
             tools:layout_editor_absoluteY="179dp" />
